@@ -8,13 +8,12 @@
 
 import Foundation
 
-// MARK: - Forecast
 struct Forecast: Decodable {
     let lat, lon: Double
     let timezone: String
     let timezoneOffset: Int
     let daily: [Daily]
-
+    
     enum CodingKeys: String, CodingKey {
         case lat, lon, timezone
         case timezoneOffset = "timezone_offset"
@@ -22,7 +21,6 @@ struct Forecast: Decodable {
     }
 }
 
-// MARK: - Daily
 struct Daily: Decodable {
     let dt, sunrise, sunset: Int
     let temp: Temp
@@ -33,7 +31,7 @@ struct Daily: Decodable {
     let weather: [Weather1]
     let clouds: Int
     let uvi: Double
-
+    
     enum CodingKeys: String, CodingKey {
         case dt, sunrise, sunset, temp
         case feelsLike = "feels_like"
@@ -44,11 +42,11 @@ struct Daily: Decodable {
         case weather, clouds, uvi
     }
 }
-// MARK: - Weather
+
 struct Weather1: Decodable {
     let id: Int
     let main, weatherDescription, icon: String
-
+    
     enum CodingKeys: String, CodingKey {
         case id, main
         case weatherDescription = "description"
@@ -56,12 +54,10 @@ struct Weather1: Decodable {
     }
 }
 
-// MARK: - FeelsLike
 struct FeelsLike: Decodable {
     let day, night, eve, morn: Double
 }
 
-// MARK: - Temp
 struct Temp: Decodable {
     let day, min, max, night: Double
     let eve, morn: Double

@@ -155,7 +155,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="fiJ-ea-saB" kind="show" id="fYr-R3-Soc"/>
+                                            <segue destination="fiJ-ea-saB" kind="show" identifier="Session" id="fYr-R3-Soc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtI-k1-CR3">
@@ -166,7 +166,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="fiJ-ea-saB" kind="show" id="Qch-Vv-RwA"/>
+                                            <segue destination="fiJ-ea-saB" kind="show" identifier="Alamofire" id="Qch-Vv-RwA"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -238,7 +238,8 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fOd-eF-bdS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="5VN-J0-WRE" customClass="TableViewCell" customModule="weatherApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -281,6 +282,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="imageWeather" destination="BM0-qj-bZc" id="KQF-Nc-UDW"/>
                                     <outlet property="tempDay" destination="GIi-N2-guU" id="qfL-4l-mAx"/>
@@ -299,7 +301,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSR-Sg-vDO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="864"/>
+            <point key="canvasLocation" x="1841" y="885"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X83-WM-Asx">
@@ -321,7 +323,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fYr-R3-Soc"/>
+        <segue reference="Qch-Vv-RwA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cloud" width="256" height="256"/>

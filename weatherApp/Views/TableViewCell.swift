@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var imageWeather: UIImageView!
     @IBOutlet weak var tempDay: UILabel!
     @IBOutlet weak var tempNight: UILabel!
